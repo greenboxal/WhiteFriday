@@ -59,11 +59,8 @@ namespace WhiteFriday.DefaultTargets
 
             foreach (HtmlNodeNavigator item in anchor.Select(depthQuery))
             {
-                if (offset > 0)
-                {
-                    offset--;
+                if (offset-- > 0)
                     continue;
-                }
 
                 return item;
             }
