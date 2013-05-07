@@ -5,13 +5,14 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 using System.Xml.XPath;
 using HtmlAgilityPack;
-using WhiteFriday.Common;
 
 namespace WhiteFriday.DefaultTargets
 {
-    public class SubmarinoScrapAlgorithm : ScrapAlgorithm
+    [TargetProvider("Submarino")]
+    public class SubmarinoTargetProvider : TargetProvider
     {
         private const string AnchorName = "prodInfo";
         private const int FromPriceDepth = 6;
@@ -19,7 +20,12 @@ namespace WhiteFriday.DefaultTargets
         private const int CurrentPriceDepth = 6;
         private const int CurrentPriceOffset = 4;
 
-        public override PriceData ScrapPage(string pageText)
+        public SubmarinoTargetProvider(IServiceController controller, XmlNode configuration)
+            : base(controller, configuration)
+        {
+        }
+
+        protected override PriceData Process(string pageText)
         {
             HtmlDocument doc = new HtmlDocument();
             PriceData data = new PriceData();

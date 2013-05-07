@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Config>
+  <PluginsDirectory>Plugins</PluginsDirectory>
+  <PluginsPrefix>WhiteFriday.</PluginsPrefix>
+  <QueryInterval>86400</QueryInterval>
+  <QueryDelay>1000</QueryDelay>
+  <MaxRetries>5</MaxRetries>
+  <DatabaseConnection>SERVER=127.0.0.1; DATABASE=whitefriday; UID=root; PASSWORD=asdas123</DatabaseConnection>
+  <Targets>
+    <Target ID="0" Name="Submarino" FriendlyName="Submarino" />
+  </Targets>
+</Config>
