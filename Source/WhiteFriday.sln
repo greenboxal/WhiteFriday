@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhiteFriday.Common", "WhiteFriday.Common\WhiteFriday.Common.csproj", "{FEA5553B-2A03-41BE-8B32-8B7EBB1369F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhiteFriday.DefaultTargets", "WhiteFriday.DefaultTargets\WhiteFriday.DefaultTargets.csproj", "{D3D57C92-92A4-411F-A19B-2BCB9BDBBE2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D1DC61A2-679A-459F-86E9-1E321CEFBF49}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTest", "SimpleTest\SimpleTest.csproj", "{99F427AB-96BB-49DF-92B1-599B3112E357}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FEA5553B-2A03-41BE-8B32-8B7EBB1369F0} = {FEA5553B-2A03-41BE-8B32-8B7EBB1369F0}
+		{D3D57C92-92A4-411F-A19B-2BCB9BDBBE2D} = {D3D57C92-92A4-411F-A19B-2BCB9BDBBE2D}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FEA5553B-2A03-41BE-8B32-8B7EBB1369F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEA5553B-2A03-41BE-8B32-8B7EBB1369F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEA5553B-2A03-41BE-8B32-8B7EBB1369F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEA5553B-2A03-41BE-8B32-8B7EBB1369F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3D57C92-92A4-411F-A19B-2BCB9BDBBE2D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3D57C92-92A4-411F-A19B-2BCB9BDBBE2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3D57C92-92A4-411F-A19B-2BCB9BDBBE2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3D57C92-92A4-411F-A19B-2BCB9BDBBE2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99F427AB-96BB-49DF-92B1-599B3112E357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99F427AB-96BB-49DF-92B1-599B3112E357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99F427AB-96BB-49DF-92B1-599B3112E357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99F427AB-96BB-49DF-92B1-599B3112E357}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
