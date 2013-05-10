@@ -12,12 +12,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{D1DC61
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleTest", "SimpleTest\SimpleTest.csproj", "{99F427AB-96BB-49DF-92B1-599B3112E357}"
-	ProjectSection(ProjectDependencies) = postProject
-		{FEA5553B-2A03-41BE-8B32-8B7EBB1369F0} = {FEA5553B-2A03-41BE-8B32-8B7EBB1369F0}
-		{D3D57C92-92A4-411F-A19B-2BCB9BDBBE2D} = {D3D57C92-92A4-411F-A19B-2BCB9BDBBE2D}
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhiteFridayService", "WhiteFridayService\WhiteFridayService.csproj", "{567C7C84-DB24-449D-A883-1835B87ECE0E}"
 	ProjectSection(ProjectDependencies) = postProject
 		{D3D57C92-92A4-411F-A19B-2BCB9BDBBE2D} = {D3D57C92-92A4-411F-A19B-2BCB9BDBBE2D}
@@ -37,10 +31,6 @@ Global
 		{D3D57C92-92A4-411F-A19B-2BCB9BDBBE2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3D57C92-92A4-411F-A19B-2BCB9BDBBE2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3D57C92-92A4-411F-A19B-2BCB9BDBBE2D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{99F427AB-96BB-49DF-92B1-599B3112E357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{99F427AB-96BB-49DF-92B1-599B3112E357}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{99F427AB-96BB-49DF-92B1-599B3112E357}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{99F427AB-96BB-49DF-92B1-599B3112E357}.Release|Any CPU.Build.0 = Release|Any CPU
 		{567C7C84-DB24-449D-A883-1835B87ECE0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{567C7C84-DB24-449D-A883-1835B87ECE0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{567C7C84-DB24-449D-A883-1835B87ECE0E}.Release|Any CPU.ActiveCfg = Release|Any CPU

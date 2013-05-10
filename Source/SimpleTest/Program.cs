@@ -12,8 +12,8 @@ namespace SimpleTest
     {
         static void Main(string[] args)
         {
-            SubmarinoScrapAlgorithm test = new SubmarinoScrapAlgorithm();
-            test.ScrapPage(File.ReadAllText(@"D:\test.html"));
+            //SubmarinoTargetProvider test = new SubmarinoTargetProvider();
+            //test..ScrapPage(File.ReadAllText(@"D:\test.html"));
         }
     }
 }
